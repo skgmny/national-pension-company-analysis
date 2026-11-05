@@ -99,8 +99,6 @@ Streamlit 대시보드에서 조회
 - 제공 방식: `streamlit_main.py`의 `file_path`에 지정된 Dropbox URL에서 로드
 - 주요 활용 항목: 사업장명, 가입상태, 업종코드, 주소, 가입자 수, 금액, 신규·상실 인원
 
-기존 README에는 `20260723` 데이터가 기재되어 있었으나, 현재 코드의 주석과 파일 URL은 `20251124`를 가리킵니다. 위 기준은 코드 참조를 바탕으로 작성했으며, 실제 자료생성년월과 원천 데이터의 상세 정의는 CSV 및 제공기관 설명을 확인해야 합니다. 원본 CSV는 이 저장소에 포함되어 있지 않습니다.
-
 ## 실행 화면
 
 ### 회사명 입력
@@ -118,49 +116,6 @@ Streamlit 대시보드에서 조회
 ### 동일 업종 사업장 탐색
 
 <img width="1244" height="735" alt="동일 업종의 사업장 비교 결과 화면" src="https://github.com/user-attachments/assets/6b19765b-77f7-4daf-988d-ef8bc907ee27" />
-
-## 로컬 실행
-
-Python과 Git이 설치된 환경에서 아래 명령을 실행합니다.
-
-```bash
-git clone https://github.com/skgmny/PyNps_MCP2607.git
-cd PyNps_MCP2607
-python -m venv .venv
-```
-
-가상환경을 활성화합니다.
-
-```powershell
-# Windows PowerShell
-.\.venv\Scripts\Activate.ps1
-```
-
-```bash
-# macOS / Linux
-source .venv/bin/activate
-```
-
-필요한 패키지를 설치한 뒤 앱을 실행합니다.
-
-```bash
-python -m pip install -r requirements.txt
-python -m pip install streamlit pandas numpy
-python -m streamlit run streamlit_main.py
-```
-
-현재 `requirements.txt`에는 Matplotlib과 Seaborn만 명시되어 있어 나머지 실행 의존성은 위 명령으로 추가 설치합니다. 앱 실행에는 외부 CSV를 내려받을 수 있는 네트워크 연결이 필요합니다. 운영체제의 한글 폰트 설치 상태에 따라 차트 표시가 달라질 수 있습니다.
-
-## 코드 구조
-
-```text
-PyNps_MCP2607/
-├── streamlit_main.py   # 데이터 전처리·분석 클래스와 대시보드
-├── requirements.txt    # 시각화 패키지 버전
-└── README.md           # 프로젝트 설명 및 실행 방법
-```
-
-핵심 분석 로직은 `PensionData` 클래스에 구성했습니다.
 
 | 메서드 | 역할 |
 | --- | --- |
