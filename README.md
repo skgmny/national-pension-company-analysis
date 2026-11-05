@@ -1,13 +1,3 @@
-실행 첫 화면 ->
-<img width="1244" height="735" alt="스크린샷 2026-09-20 131624" src="https://github.com/user-attachments/assets/199aa5f5-796d-4928-b618-6120803c0b0d" />
-
-회사 입력 ->
-<img width="1244" height="735" alt="스크린샷 2026-09-20 132111" src="https://github.com/user-attachments/assets/3d2481a0-74df-4031-8afd-9dcf2391ab90" />
-
-<img width="1243" height="735" alt="스크린샷 2026-09-20 132118" src="https://github.com/user-attachments/assets/8549c6f0-3b06-4bae-984b-c604776631e7" />
-
-<img width="1244" height="735" alt="스크린샷 2026-09-20 132123" src="https://github.com/user-attachments/assets/6b19765b-77f7-4daf-988d-ef8bc907ee27" />
-
 # 국민연금 사업장 데이터 기반 기업·업종 비교 대시보드
 
 국민연금 가입 사업장 데이터를 정제하고, 기업별 급여 추정치와 동일 업종의 통계를 비교하는 **Python·Pandas·Streamlit 데이터 분석 프로젝트**입니다.
